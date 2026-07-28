@@ -24,6 +24,11 @@ Agnes AI 在文本、图像和视频生成方面的各项能力。
 
 **仓库：** [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman.git)
 
+### 🎨 UI/UX Pro Max
+全平台专业 UI/UX 智能设计支持，覆盖品牌设计、设计系统、组件规范、动效设计等多维度能力。
+
+**仓库：** [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git)
+
 ## 使用方式
 
 每个技能通过对应的 `SKILL.md` 文件定义，将技能目录放置于 Codex 的 skills 路径下即可使用。
