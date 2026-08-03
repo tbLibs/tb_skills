@@ -13,21 +13,27 @@
 
 #### 🦾 Swift Development
 全面 Swift 开发支持：SPM / Xcode 命令行构建、XCTest / Swift Testing 测试、simctl 模拟器管理、代码签名与分发、SwiftFormat / SwiftLint、Swift 6 并发模式、SwiftUI MVVM 架构、Core Data / SwiftData 持久化。
+**仓库：** [Swift Development](https://github.com/hmohamed01/swift-development.git)
 
 #### ⚡ Swift Concurrency Expert
 Swift 6.2+ 并发审查与修复：Sendable 一致性、@MainActor、actor 隔离、数据竞争诊断、回调迁移 async/await。
+**仓库：** [Swift Concurrency Expert](https://github.com/Dimillian/Skills.git)
 
 #### 💧 SwiftUI Liquid Glass
 采用、重构或审查 SwiftUI iOS 26+ Liquid Glass 界面，确保正确性、性能与设计一致性。
+**仓库：** [SwiftUI Liquid Glass](https://github.com/Dimillian/Skills.git)
 
 #### 📐 SwiftUI UI Patterns
 SwiftUI 视图与组件最佳实践：导航层级、自定义 view modifier、响应式布局（stacks/grids）、TabView 架构、@State / @Binding 管理。
+**仓库：** [SwiftUI UI Patterns](https://github.com/Dimillian/Skills.git)
 
 #### 🧹 SwiftUI View Refactor
 SwiftUI 视图重构与审查：拆分为小型专用子视图、MV-over-MVVM 数据流、稳定视图树、显式依赖注入、正确使用 @Observable。
+**仓库：** [SwiftUI View Refactor](https://github.com/Dimillian/Skills.git)
 
 #### 🚀 SwiftUI Performance Audit
 SwiftUI 运行时性能审计：慢渲染、滚动卡顿、高 CPU/内存、视图过度更新、布局抖动，并提供 Instruments 分析指导。
+**仓库：** [SwiftUI Performance Audit](https://github.com/Dimillian/Skills.git)
 
 #### 💎 Liquid Glass
 iOS 26 Liquid Glass 设计系统专家：glassEffect 实现、GlassEffectContainer、iOS 17/18 迁移、形态动画、HIG 合规、无障碍与性能优化。
@@ -46,48 +52,61 @@ iOS 质量审计技能包，包含 12 个子技能：无障碍、崩溃安全、
 
 #### 🐞 iOS Debugger Agent
 通过 XcodeBuildMCP 构建、运行、启动和调试模拟器上的 iOS 项目，检查界面状态、捕获日志、诊断运行时行为。
+**仓库：** [iOS Debugger Agent](https://github.com/Dimillian/Skills.git)
 
 #### 🖥️ macOS Menubar Tuist App
 构建、重构或审查基于 Tuist + SwiftUI 的 macOS 菜单栏应用（LSUIElement），包括 Tuist 目标定义、model-client-store-view 架构、脚本化启动流程。
+**仓库：** [macOS Menubar Tuist App](https://github.com/Dimillian/Skills.git)
 
 #### 📦 macOS SwiftPM App Packaging
 无 Xcode 项目的 SwiftPM macOS 应用开发：目录结构、目标与资源、自定义 .app 打包脚本、签名/公证/appcast 流程。
+**仓库：** [macOS SwiftPM App Packaging](https://github.com/Dimillian/Skills.git)
 
 ### 📱 App Store & 上架
 
 #### 📝 App Store Changelog
 基于 git tag 自动收集用户可见变更，生成 App Store 发布说明（What's New）。
+**仓库：** [App Store Changelog](https://github.com/Dimillian/Skills.git)
 
 #### ✅ App Store Review
 对照 Apple App Store 审核指南检查项目合规性，支持原生（Swift/Obj-C）、Flutter、React Native、Expo、Kotlin Multiplatform、.NET MAUI 等项目。
+**仓库：** [App Store Review](https://github.com/devsemih/appstore-review-skill.git)
 
 #### 📸 ASO App Store Screenshots
 分析应用代码库、提炼核心卖点，使用 Nano Banana Pro 生成高转化的 App Store 截图。
+**仓库：** [ASO App Store Screenshots](https://github.com/adamlyttleapps/claude-skill-aso-appstore-screenshots.git)
 
 ### 🔍 代码审查 & 重构
 
 #### 👥 Review Swarm
 并行只读多智能体 diff 审查：发现行为回归、安全/隐私风险、性能/可靠性问题、测试覆盖缺口，并给出优先级修复路径。
+**仓库：** [Review Swarm](https://github.com/Dimillian/Skills.git)
 
 #### ✂️ Review and Simplify Changes
 审查 git diff 或指定文件的复用性、代码质量、效率与规范问题，并可安全地应用修复。
+**仓库：** [Review and Simplify Changes](https://github.com/Dimillian/Skills.git)
 
 #### 🐛 Bug Hunt Swarm
 并行只读多智能体根因调查：定位崩溃、回归、卡顿、异常失败，输出带最快验证路径的排序诊断，不直接修改代码。
+**仓库：** [Bug Hunt Swarm](https://github.com/Dimillian/Skills.git)
 
 #### 🔀 Orchestrate Batch Refactor
 大型重构/重写编排：并行多智能体分析、拆分工作流、明确所有权与依赖感知执行。
+**仓库：** [Orchestrate Batch Refactor](https://github.com/Dimillian/Skills.git)
 
 #### 📊 Project Skill Audit
 分析项目历史 Codex 会话、记忆文件与现有技能，推荐高价值的新技能或更新建议。
+**仓库：** [Project Skill Audit](https://github.com/Dimillian/Skills.git)
 
 #### ⚛️ React Component Performance
 React 组件性能分析与优化：慢渲染、重复渲染、长列表卡顿、昂贵计算。
+**仓库：** [React Component Performance](https://github.com/Dimillian/Skills.git)
 
 ### 🐙 GitHub
 
 #### 🐙 GitHub
 通过 `gh` CLI 操作 GitHub：issue、PR、CI 状态、workflow 与 API 查询。
+**仓库：** [GitHub](https://github.com/Dimillian/Skills.git)
 
 ### 🛠️ 效率工具
 
