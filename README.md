@@ -1,6 +1,6 @@
 # TB Skills
 
-个人 Codex 技能集合，汇集了日常开发中常用的自定义 Agent 技能。
+个人 Codex 技能、Agent 与工具集合，汇集了日常开发中常用的自定义技能、专用 Agent 角色和 MCP 工具。
 
 ## 技能列表
 
@@ -102,6 +102,13 @@ iOS 质量审计技能包，包含 12 个子技能：无障碍、崩溃安全、
 React 组件性能分析与优化：慢渲染、重复渲染、长列表卡顿、昂贵计算。
 **仓库：** [React Component Performance](https://github.com/Dimillian/Skills.git)
 
+### 🎭 AI Agent 团队
+
+#### 🎭 Agency Agents（Agent 角色集合）
+覆盖工程开发、设计、营销、产品、项目管理、测试等领域的专用 AI Agent 角色集合。每个 Agent 定义了角色定位、工作流程、交付物与沟通风格，支持按需选择和组合，并提供 Codex、Claude Code、Cursor、Gemini CLI 等工具的集成脚本。
+
+**仓库：** [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents.git)
+
 ### 🐙 GitHub
 
 #### 🐙 GitHub
@@ -109,6 +116,11 @@ React 组件性能分析与优化：慢渲染、重复渲染、长列表卡顿�
 **仓库：** [GitHub](https://github.com/Dimillian/Skills.git)
 
 ### 🛠️ 效率工具
+
+#### 📱 Mobile MCP
+面向移动端开发与自动化的 MCP 服务，支持 iOS / Android 模拟器与真机。通过无障碍界面信息或截图坐标操作应用，提供点击、滑动、输入、截图、应用安装与启动等能力，适用于自动化测试、多步骤用户流程和数据采集，可接入 Codex 等支持 MCP 的客户端。
+
+**仓库：** [mobile-next/mobile-mcp](https://github.com/mobile-next/mobile-mcp.git)
 
 #### 🛠️ RTK CLI Agent
 一个 CLI 代理，可减少常见开发命令中 60-90% 的 LLM 令牌消耗。单个 Rust 二进制文件，零依赖。
@@ -143,3 +155,7 @@ Agnes AI 在文本、图像和视频生成方面的各项能力。
 # 技能安装路径
 ~/.codex/skills/<skill-name>/
 ```
+
+Agency Agents 提供 Agent 角色定义，使用时请按其仓库说明生成对应工具的集成文件并安装。
+
+Mobile MCP 作为 MCP 服务使用，请按其仓库说明配置客户端连接，并准备对应的模拟器或真机环境。
