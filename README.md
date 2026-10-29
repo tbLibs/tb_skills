@@ -1,180 +1,98 @@
 # TB Skills
 
-个人 Codex 技能、Agent 与工具集合，汇集了日常开发中常用的自定义技能、专用 Agent 角色和 MCP 工具。
+个人常用的 Codex 技能、Agent 角色与开发工具索引，涵盖 Apple 开发、应用上架、代码审查与日常自动化。
 
-## 技能列表
+[Apple 开发](#apple-开发) · [App Store 与上架](#app-store-与上架) · [代码审查与重构](#代码审查与重构) · [AI Agent 团队](#ai-agent-团队) · [GitHub](#github) · [效率工具](#效率工具) · [安装与使用](#安装与使用)
 
-### 🍎 Apple 开发
+> 本仓库收录项目简介与来源链接。点击项目名称可访问仓库，具体安装步骤、依赖和配置以各项目说明为准。
 
-#### 🧠 Apple Full-Stack Genius
-资深 Apple 全栈工程师 + 设计专家：使用 Swift 6、SwiftUI、iOS 26 Liquid Glass 构建 A 级 iOS/macOS/watchOS/tvOS/visionOS 应用，支持 AI 生成应用图标、启动图和 Logo，执行全代码审计（零警告、零死代码、零废弃 API）。
+## Apple 开发
 
-**仓库：** [Jonnycatx/apple-full-stack-genius-skill](https://github.com/Jonnycatx/apple-full-stack-genius-skill.git)
+| 项目 | 主要用途 |
+| :--- | :--- |
+| [Apple Full-Stack Genius](https://github.com/Jonnycatx/apple-full-stack-genius-skill.git) | Swift 6 / SwiftUI 全栈开发、应用视觉设计与代码审计。 |
+| [Swift Development](https://github.com/hmohamed01/swift-development.git) | SPM / Xcode 构建、测试、模拟器、签名分发、并发与持久化。 |
+| [Swift Concurrency Expert](https://github.com/Dimillian/Skills.git) | Swift 6.2+ 并发审查：Sendable、actor 隔离、数据竞争与 async/await 迁移。 |
+| [SwiftUI Liquid Glass](https://github.com/Dimillian/Skills.git) | 实现与审查 SwiftUI iOS 26+ Liquid Glass 界面，检查性能与设计一致性。 |
+| [SwiftUI UI Patterns](https://github.com/Dimillian/Skills.git) | 组织 SwiftUI 导航、布局、TabView、状态与组件。 |
+| [SwiftUI View Refactor](https://github.com/Dimillian/Skills.git) | 拆分复杂视图，整理数据流、依赖注入与 Observation。 |
+| [SwiftUI Performance Audit](https://github.com/Dimillian/Skills.git) | 诊断慢渲染、滚动卡顿、过度更新与布局抖动，提供 Instruments 分析指导。 |
+| [Liquid Glass](https://github.com/2dubu/liquid-glass.git) | Liquid Glass 效果、容器与动效，涵盖旧版迁移、HIG、无障碍与性能。 |
+| [Apple Skills（技能包）](https://github.com/Prisma-Labs-Dev/apple-skills.git) | Apple 生态 API 参考与实战指南，覆盖 SwiftUI、UIKit、StoreKit、WidgetKit 等。 |
+| [iOS Agentic Skills（技能包）](https://github.com/mwd1234/ios-agentic-skills.git) | iOS / watchOS 质量审计，覆盖无障碍、崩溃安全、隐私、本地化、测试与电池优化等。 |
+| [iOS Debugger Agent](https://github.com/Dimillian/Skills.git) | 通过 XcodeBuildMCP 构建、运行和调试 iOS 模拟器应用，检查界面与日志。 |
+| [macOS Menubar Tuist App](https://github.com/Dimillian/Skills.git) | 基于 Tuist + SwiftUI 开发 macOS 菜单栏应用，涵盖目标定义与应用架构。 |
+| [macOS SwiftPM App Packaging](https://github.com/Dimillian/Skills.git) | 无 Xcode 项目的 SwiftPM macOS 应用开发、打包、签名、公证与 appcast。 |
 
-#### 🦾 Swift Development
-全面 Swift 开发支持：SPM / Xcode 命令行构建、XCTest / Swift Testing 测试、simctl 模拟器管理、代码签名与分发、SwiftFormat / SwiftLint、Swift 6 并发模式、SwiftUI MVVM 架构、Core Data / SwiftData 持久化。
-**仓库：** [Swift Development](https://github.com/hmohamed01/swift-development.git)
+## App Store 与上架
 
-#### ⚡ Swift Concurrency Expert
-Swift 6.2+ 并发审查与修复：Sendable 一致性、@MainActor、actor 隔离、数据竞争诊断、回调迁移 async/await。
-**仓库：** [Swift Concurrency Expert](https://github.com/Dimillian/Skills.git)
+| 项目 | 主要用途 |
+| :--- | :--- |
+| [App Store Connect CLI](https://github.com/rorkai/App-Store-Connect-CLI) | `asc` 命令行工具：TestFlight、构建、版本提交、签名、分析、截图与订阅管理。 |
+| [App Store Connect CLI Skills（技能包）](https://github.com/rorkai/app-store-connect-cli-skills) | 配合 `asc` 完成构建、分发、元数据、本地化、发布、截图、订阅与 Apple Ads 工作流。 |
+| [App Store Changelog](https://github.com/Dimillian/Skills.git) | 基于 Git tag 收集用户可见变更，生成 App Store「版本更新」说明。 |
+| [App Store Review](https://github.com/devsemih/appstore-review-skill.git) | 对照 App Store 审核指南检查合规性，支持原生与多种跨平台项目。 |
+| [ASO App Store Screenshots](https://github.com/adamlyttleapps/claude-skill-aso-appstore-screenshots.git) | 分析应用代码与核心卖点，使用 Nano Banana Pro 生成 App Store 截图。 |
 
-#### 💧 SwiftUI Liquid Glass
-采用、重构或审查 SwiftUI iOS 26+ Liquid Glass 界面，确保正确性、性能与设计一致性。
-**仓库：** [SwiftUI Liquid Glass](https://github.com/Dimillian/Skills.git)
+## 代码审查与重构
 
-#### 📐 SwiftUI UI Patterns
-SwiftUI 视图与组件最佳实践：导航层级、自定义 view modifier、响应式布局（stacks/grids）、TabView 架构、@State / @Binding 管理。
-**仓库：** [SwiftUI UI Patterns](https://github.com/Dimillian/Skills.git)
+| 项目 | 主要用途 |
+| :--- | :--- |
+| [Review Swarm](https://github.com/Dimillian/Skills.git) | 并行只读审查 diff，发现行为回归、安全隐私、性能可靠性与测试覆盖问题。 |
+| [Review and Simplify Changes](https://github.com/Dimillian/Skills.git) | 审查代码复用、质量、效率与规范，并可应用安全修复。 |
+| [Bug Hunt Swarm](https://github.com/Dimillian/Skills.git) | 并行只读调查崩溃、回归、卡顿与异常，给出根因排序和验证路径。 |
+| [Orchestrate Batch Refactor](https://github.com/Dimillian/Skills.git) | 编排大型重构：并行分析、拆分工作流、明确所有权与任务依赖。 |
+| [Project Skill Audit](https://github.com/Dimillian/Skills.git) | 结合 Codex 会话、记忆与已有技能，推荐项目需要创建或更新的技能。 |
+| [React Component Performance](https://github.com/Dimillian/Skills.git) | 分析并优化 React 慢渲染、重复渲染、长列表与昂贵计算。 |
 
-#### 🧹 SwiftUI View Refactor
-SwiftUI 视图重构与审查：拆分为小型专用子视图、MV-over-MVVM 数据流、稳定视图树、显式依赖注入、正确使用 @Observable。
-**仓库：** [SwiftUI View Refactor](https://github.com/Dimillian/Skills.git)
+## AI Agent 团队
 
-#### 🚀 SwiftUI Performance Audit
-SwiftUI 运行时性能审计：慢渲染、滚动卡顿、高 CPU/内存、视图过度更新、布局抖动，并提供 Instruments 分析指导。
-**仓库：** [SwiftUI Performance Audit](https://github.com/Dimillian/Skills.git)
+| 项目 | 主要用途 |
+| :--- | :--- |
+| [Agency Agents（Agent 角色集合）](https://github.com/msitarzewski/agency-agents.git) | 工程、设计、营销、产品、项目管理与测试等专用 Agent 角色，提供多工具集成脚本。 |
 
-#### 💎 Liquid Glass
-iOS 26 Liquid Glass 设计系统专家：glassEffect 实现、GlassEffectContainer、iOS 17/18 迁移、形态动画、HIG 合规、无障碍与性能优化。
+## GitHub
 
-**仓库：** [2dubu/liquid-glass](https://github.com/2dubu/liquid-glass.git)
+| 项目 | 主要用途 |
+| :--- | :--- |
+| [GitHub](https://github.com/Dimillian/Skills.git) | 通过 `gh` CLI 操作 GitHub issue、PR、CI、workflow 与 API。 |
 
-#### 🍎 Apple Skills（技能包）
-Apple 生态技能包，包含 30+ 个 API 参考与实战指南：SwiftUI、UIKit、StoreKit、WidgetKit、HealthKit、SwiftData、Combine、MapKit、App Intents、XCUITest、Swift Testing、HIG 等。
+## 效率工具
 
-**仓库：** [Prisma-Labs-Dev/apple-skills](https://github.com/Prisma-Labs-Dev/apple-skills.git)
+| 项目 | 主要用途 |
+| :--- | :--- |
+| [Mobile MCP](https://github.com/mobile-next/mobile-mcp.git) | 通过 MCP 操作 iOS / Android 模拟器与真机，支持界面交互、截图、应用管理与数据采集。 |
+| [RTK CLI Agent](https://github.com/rtk-ai/rtk.git) | 单个 Rust 二进制 CLI 代理，用于减少常见开发命令的 LLM Token 消耗。 |
+| [Agnes AI Generation](https://github.com/Yacey/agnes-ai-generation-skill.git) | 调用 Agnes AI 的文本、图像与视频生成能力。 |
+| [Caveman](https://github.com/JuliusBrussee/caveman.git) | 压缩表达以减少 Token 消耗，支持 lite、full、ultra 与文言模式。 |
+| [UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git) | 全平台 UI/UX 设计支持，涵盖品牌、设计系统、组件与动效。 |
+| [App Store Opportunity Research](https://github.com/froessell/app-store-opportunity-research.git) | 调研 App Store 机会、分析竞争差距、编写 MVP 需求，并在 Rork 构建原型。 |
 
-#### 🧪 iOS Agentic Skills（技能包）
-iOS 质量审计技能包，包含 12 个子技能：无障碍、崩溃安全、数据建模与同步、错误信息与空状态、触觉设计、本地化、营销文案、性能、隐私、测试策略、视觉设计与对比度、watchOS 电池优化。
+## 安装与使用
 
-**仓库：** [mwd1234/ios-agentic-skills](https://github.com/mwd1234/ios-agentic-skills.git)
+### Codex 技能与技能包
 
-#### 🐞 iOS Debugger Agent
-通过 XcodeBuildMCP 构建、运行、启动和调试模拟器上的 iOS 项目，检查界面状态、捕获日志、诊断运行时行为。
-**仓库：** [iOS Debugger Agent](https://github.com/Dimillian/Skills.git)
+技能通常通过 `SKILL.md` 定义。将需要的技能目录放入 Codex 的全局技能路径；技能包应按子技能目录分别安装：
 
-#### 🖥️ macOS Menubar Tuist App
-构建、重构或审查基于 Tuist + SwiftUI 的 macOS 菜单栏应用（LSUIElement），包括 Tuist 目标定义、model-client-store-view 架构、脚本化启动流程。
-**仓库：** [macOS Menubar Tuist App](https://github.com/Dimillian/Skills.git)
-
-#### 📦 macOS SwiftPM App Packaging
-无 Xcode 项目的 SwiftPM macOS 应用开发：目录结构、目标与资源、自定义 .app 打包脚本、签名/公证/appcast 流程。
-**仓库：** [macOS SwiftPM App Packaging](https://github.com/Dimillian/Skills.git)
-
-### 📱 App Store & 上架
-
-#### 🚀 App Store Connect CLI
-面向 App Store Connect API 的命令行工具（`asc`），支持 TestFlight、构建管理、版本提交、签名、分析报告、截图与订阅管理等工作流，可用于终端脚本和 CI/CD 自动化。
-
-**仓库：** [rorkai/App-Store-Connect-CLI](https://github.com/rorkai/App-Store-Connect-CLI)
-
-#### 🧰 App Store Connect CLI Skills（技能包）
-配合 `asc` 使用的 Agent 技能集合，涵盖 Xcode 构建、TestFlight 分发、元数据同步与本地化、版本发布、签名配置、截图处理、订阅和 Apple Ads 等任务。
-
-**仓库：** [rorkai/app-store-connect-cli-skills](https://github.com/rorkai/app-store-connect-cli-skills)
-
-#### 📝 App Store Changelog
-基于 git tag 自动收集用户可见变更，生成 App Store 发布说明（What's New）。
-**仓库：** [App Store Changelog](https://github.com/Dimillian/Skills.git)
-
-#### ✅ App Store Review
-对照 Apple App Store 审核指南检查项目合规性，支持原生（Swift/Obj-C）、Flutter、React Native、Expo、Kotlin Multiplatform、.NET MAUI 等项目。
-**仓库：** [App Store Review](https://github.com/devsemih/appstore-review-skill.git)
-
-#### 📸 ASO App Store Screenshots
-分析应用代码库、提炼核心卖点，使用 Nano Banana Pro 生成高转化的 App Store 截图。
-**仓库：** [ASO App Store Screenshots](https://github.com/adamlyttleapps/claude-skill-aso-appstore-screenshots.git)
-
-### 🔍 代码审查 & 重构
-
-#### 👥 Review Swarm
-并行只读多智能体 diff 审查：发现行为回归、安全/隐私风险、性能/可靠性问题、测试覆盖缺口，并给出优先级修复路径。
-**仓库：** [Review Swarm](https://github.com/Dimillian/Skills.git)
-
-#### ✂️ Review and Simplify Changes
-审查 git diff 或指定文件的复用性、代码质量、效率与规范问题，并可安全地应用修复。
-**仓库：** [Review and Simplify Changes](https://github.com/Dimillian/Skills.git)
-
-#### 🐛 Bug Hunt Swarm
-并行只读多智能体根因调查：定位崩溃、回归、卡顿、异常失败，输出带最快验证路径的排序诊断，不直接修改代码。
-**仓库：** [Bug Hunt Swarm](https://github.com/Dimillian/Skills.git)
-
-#### 🔀 Orchestrate Batch Refactor
-大型重构/重写编排：并行多智能体分析、拆分工作流、明确所有权与依赖感知执行。
-**仓库：** [Orchestrate Batch Refactor](https://github.com/Dimillian/Skills.git)
-
-#### 📊 Project Skill Audit
-分析项目历史 Codex 会话、记忆文件与现有技能，推荐高价值的新技能或更新建议。
-**仓库：** [Project Skill Audit](https://github.com/Dimillian/Skills.git)
-
-#### ⚛️ React Component Performance
-React 组件性能分析与优化：慢渲染、重复渲染、长列表卡顿、昂贵计算。
-**仓库：** [React Component Performance](https://github.com/Dimillian/Skills.git)
-
-### 🎭 AI Agent 团队
-
-#### 🎭 Agency Agents（Agent 角色集合）
-覆盖工程开发、设计、营销、产品、项目管理、测试等领域的专用 AI Agent 角色集合。每个 Agent 定义了角色定位、工作流程、交付物与沟通风格，支持按需选择和组合，并提供 Codex、Claude Code、Cursor、Gemini CLI 等工具的集成脚本。
-
-**仓库：** [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents.git)
-
-### 🐙 GitHub
-
-#### 🐙 GitHub
-通过 `gh` CLI 操作 GitHub：issue、PR、CI 状态、workflow 与 API 查询。
-**仓库：** [GitHub](https://github.com/Dimillian/Skills.git)
-
-### 🛠️ 效率工具
-
-#### 📱 Mobile MCP
-面向移动端开发与自动化的 MCP 服务，支持 iOS / Android 模拟器与真机。通过无障碍界面信息或截图坐标操作应用，提供点击、滑动、输入、截图、应用安装与启动等能力，适用于自动化测试、多步骤用户流程和数据采集，可接入 Codex 等支持 MCP 的客户端。
-
-**仓库：** [mobile-next/mobile-mcp](https://github.com/mobile-next/mobile-mcp.git)
-
-#### 🛠️ RTK CLI Agent
-一个 CLI 代理，可减少常见开发命令中 60-90% 的 LLM 令牌消耗。单个 Rust 二进制文件，零依赖。
-
-**仓库：** [rtk-ai/rtk](https://github.com/rtk-ai/rtk.git)
-
-#### 🎨 Agnes AI Generation
-Agnes AI 在文本、图像和视频生成方面的各项能力。
-
-**仓库：** [Yacey/agnes-ai-generation-skill](https://github.com/Yacey/agnes-ai-generation-skill.git)
-
-#### 🦴 Caveman
-通过"原始人式"压缩表达，将输出 Token 数量减少 65%，同时保持完整的技术准确性。支持多种强度级别：lite、full、ultra、文言模式。
-
-**仓库：** [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman.git)
-
-#### 🎨 UI/UX Pro Max
-全平台专业 UI/UX 智能设计支持，覆盖品牌设计、设计系统、组件规范、动效设计等多维度能力。
-
-**仓库：** [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git)
-
-#### 📱 App Store Opportunity Research
-全流程 App Store 机会研究。发现未充分服务的细分市场，分析竞争对手的差距，编写 MVP 产品需求文档，并在 Rork 上构建原型。
-
-**仓库：** [froessell/app-store-opportunity-research](https://github.com/froessell/app-store-opportunity-research.git)
-
-## 使用方式
-
-每个技能通过对应的 `SKILL.md` 文件定义，将技能目录放置于 Codex 的 skills 路径下即可使用。
-
-```bash
-# 技能安装路径
-~/.codex/skills/<skill-name>/
+```text
+~/.codex/skills/<skill-name>/SKILL.md
 ```
 
-Agency Agents 提供 Agent 角色定义，使用时请按其仓库说明生成对应工具的集成文件并安装。
+### Agent 角色
 
-Mobile MCP 作为 MCP 服务使用，请按其仓库说明配置客户端连接，并准备对应的模拟器或真机环境。
+[Agency Agents](https://github.com/msitarzewski/agency-agents.git) 提供专用角色定义。按仓库说明生成对应工具的集成文件，再安装需要的角色。
 
-App Store Connect CLI 可通过 Homebrew 安装：
+### MCP 服务
+
+[Mobile MCP](https://github.com/mobile-next/mobile-mcp.git) 通过 MCP 客户端连接使用。按仓库说明配置服务，并准备对应的模拟器或真机环境。
+
+### App Store Connect CLI
+
+使用 Homebrew 安装 `asc` 并检查版本：
 
 ```bash
 brew install asc
 asc version
 ```
 
-App Store Connect CLI Skills 依赖 `asc`，将仓库中 `skills/` 下需要的技能目录安装到 Codex 的 skills 路径。访问 App Store Connect 时，还需按 CLI 仓库说明配置 API Key 认证。
+配套的 [CLI Skills](https://github.com/rorkai/app-store-connect-cli-skills) 依赖 `asc`，按上面的 Codex 技能方式安装。访问 App Store Connect 前，还需按 [CLI 仓库说明](https://github.com/rorkai/App-Store-Connect-CLI) 配置 API Key 认证。
