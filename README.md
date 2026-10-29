@@ -64,6 +64,16 @@ iOS 质量审计技能包，包含 12 个子技能：无障碍、崩溃安全、
 
 ### 📱 App Store & 上架
 
+#### 🚀 App Store Connect CLI
+面向 App Store Connect API 的命令行工具（`asc`），支持 TestFlight、构建管理、版本提交、签名、分析报告、截图与订阅管理等工作流，可用于终端脚本和 CI/CD 自动化。
+
+**仓库：** [rorkai/App-Store-Connect-CLI](https://github.com/rorkai/App-Store-Connect-CLI)
+
+#### 🧰 App Store Connect CLI Skills（技能包）
+配合 `asc` 使用的 Agent 技能集合，涵盖 Xcode 构建、TestFlight 分发、元数据同步与本地化、版本发布、签名配置、截图处理、订阅和 Apple Ads 等任务。
+
+**仓库：** [rorkai/app-store-connect-cli-skills](https://github.com/rorkai/app-store-connect-cli-skills)
+
 #### 📝 App Store Changelog
 基于 git tag 自动收集用户可见变更，生成 App Store 发布说明（What's New）。
 **仓库：** [App Store Changelog](https://github.com/Dimillian/Skills.git)
@@ -159,3 +169,12 @@ Agnes AI 在文本、图像和视频生成方面的各项能力。
 Agency Agents 提供 Agent 角色定义，使用时请按其仓库说明生成对应工具的集成文件并安装。
 
 Mobile MCP 作为 MCP 服务使用，请按其仓库说明配置客户端连接，并准备对应的模拟器或真机环境。
+
+App Store Connect CLI 可通过 Homebrew 安装：
+
+```bash
+brew install asc
+asc version
+```
+
+App Store Connect CLI Skills 依赖 `asc`，将仓库中 `skills/` 下需要的技能目录安装到 Codex 的 skills 路径。访问 App Store Connect 时，还需按 CLI 仓库说明配置 API Key 认证。
