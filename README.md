@@ -66,6 +66,7 @@
 | [Agnes AI Generation](https://github.com/Yacey/agnes-ai-generation-skill.git) | 调用 Agnes AI 的文本、图像与视频生成能力。 |
 | [Caveman](https://github.com/JuliusBrussee/caveman.git) | 压缩表达以减少 Token 消耗，支持 lite、full、ultra 与文言模式。 |
 | [UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git) | 全平台 UI/UX 设计支持，涵盖品牌、设计系统、组件与动效。 |
+| [Impeccable](https://github.com/pbakaus/impeccable.git) | 面向编码 Agent 的前端设计工具，支持界面打磨、设计评审，以及无障碍、性能、主题与响应式审计。 |
 | [App Store Opportunity Research](https://github.com/froessell/app-store-opportunity-research.git) | 调研 App Store 机会、分析竞争差距、编写 MVP 需求，并在 Rork 构建原型。 |
 
 ## 安装与使用
